@@ -10,4 +10,4 @@ RUN ./mvnw package -DskipTests
 
 EXPOSE 8084
 
-CMD ["java", "-jar", "./target/EurekaServerApplication-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "./target/APIGatewayApplication-0.0.1-SNAPSHOT.jar"]
