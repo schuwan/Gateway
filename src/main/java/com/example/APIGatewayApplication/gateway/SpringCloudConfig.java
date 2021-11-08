@@ -14,6 +14,10 @@ public class SpringCloudConfig {
         return builder.routes()
                 .route(r->r.path("/users/**")
                         .uri("lb://USER-SERVICE"))
+                .route(r->r.path("/lists/**")
+                        .uri("lb://USER-SERVICE"))
+                .route(r->r.path("/comments/**")
+                        .uri("lb://POST-SERVICE"))
                 .route(r->r.path("/posts/**")
                         .uri("lb://POST-SERVICE"))
                 .build();
